@@ -8,12 +8,11 @@
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Codepina" />
 <link rel="icon" type="image/png" href="assets/favicon.png" />
-<!-- REVISAR: sustituir por la URL absoluta de producción en canonical y og:url cuando el sitio esté publicado -->
-<link rel="canonical" href="index.html" />
+<link rel="canonical" href="https://www.codepina.com/" />
 <meta property="og:title" content="Mármol y Granito en Tomelloso | Codepina" />
 <meta property="og:description" content="Marmolistas en Tomelloso (Ciudad Real) desde 1915. Fabricación, venta y colocación de mármol, granito y piedra natural." />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="index.html" />
+<meta property="og:url" content="https://www.codepina.com/" />
 <meta property="og:image" content="https://www.codepina.com/assets/hero-poster.jpg" />
 <meta property="og:locale" content="es_ES" />
 <meta property="og:site_name" content="Codepina" />
@@ -31,7 +30,7 @@
   "@type": "HomeAndConstructionBusiness",
   "name": "Codepina",
   "description": "Empresa especializada en la fabricación, venta y colocación de mármol, granito y piedra natural desde 1915. Alta decoración, arte funerario y construcción en Tomelloso (Ciudad Real).",
-  "url": "index.html",
+  "url": "https://www.codepina.com/",
   "telephone": "+34926510545",
   "email": "marmolesherrero@codepina.com",
   "address": {
@@ -43,8 +42,8 @@
     "addressCountry": "ES"
   },
   "areaServed": ["Tomelloso", "Orense", "Huelva", "Guadalajara", "Sigüenza", "Canarias"],
-  "image": "assets/hero-poster.jpg",
-  "logo": "assets/logo.png"
+  "image": "https://www.codepina.com/assets/hero-poster.jpg",
+  "logo": "https://www.codepina.com/assets/logo.png"
 }
 </script>
 <style>
@@ -87,7 +86,8 @@ h2{font-size:clamp(1.8rem,3.5vw,2.6rem);margin-bottom:16px;}
 .btn-outline:hover{background:rgba(255,255,255,.08);border-color:#fff;}
 
 /* Header */
-.site-header{position:sticky;top:0;z-index:100;background:rgba(10,10,9,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--color-border);}
+.site-header{position:sticky;top:0;z-index:100;border-bottom:1px solid var(--color-border);}
+.site-header::before{content:'';position:absolute;inset:0;z-index:-1;background:rgba(10,10,9,.85);backdrop-filter:blur(10px);}
 .header-inner{max-width:var(--container);margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:24px;}
 .logo-link{display:flex;align-items:center;gap:12px;}
 .logo-mark{height:58px;width:auto;}

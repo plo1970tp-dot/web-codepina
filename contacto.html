@@ -8,12 +8,11 @@
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Codepina" />
 <link rel="icon" type="image/png" href="assets/favicon.png" />
-<!-- REVISAR: sustituir por la URL absoluta de producción en canonical y og:url cuando el sitio esté publicado -->
-<link rel="canonical" href="contacto.html" />
+<link rel="canonical" href="https://www.codepina.com/contacto.html" />
 <meta property="og:title" content="Localización y Contacto en Tomelloso | Codepina" />
 <meta property="og:description" content="Contacte con Codepina, marmolistas en Tomelloso (Ciudad Real) desde 1915. Teléfono 926 51 05 45." />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="contacto.html" />
+<meta property="og:url" content="https://www.codepina.com/contacto.html" />
 <meta property="og:image" content="https://www.codepina.com/assets/hero-poster.jpg" />
 <meta property="og:locale" content="es_ES" />
 <meta property="og:site_name" content="Codepina" />
@@ -29,8 +28,8 @@
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "index.html"},
-    {"@type": "ListItem", "position": 2, "name": "Localización", "item": "contacto.html"}
+    {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.codepina.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Localización", "item": "https://www.codepina.com/contacto.html"}
   ]
 }
 </script>
@@ -70,7 +69,8 @@ h2{font-size:clamp(1.8rem,3.5vw,2.6rem);margin-bottom:16px;}
 .btn-primary:hover{background:var(--color-primary-hover);transform:translateY(-2px);box-shadow:var(--glow);}
 
 /* Header */
-.site-header{position:sticky;top:0;z-index:100;background:rgba(10,10,9,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--color-border);}
+.site-header{position:sticky;top:0;z-index:100;border-bottom:1px solid var(--color-border);}
+.site-header::before{content:'';position:absolute;inset:0;z-index:-1;background:rgba(10,10,9,.85);backdrop-filter:blur(10px);}
 .header-inner{max-width:var(--container);margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:24px;}
 .logo-link{display:flex;align-items:center;gap:12px;}
 .logo-mark{height:58px;width:auto;}
@@ -222,8 +222,8 @@ textarea{resize:vertical;min-height:130px;}
         </div>
       </div>
 
-      <form class="contact-form" action="#" method="post">
-        <!-- REVISAR: conectar el formulario a un servicio de envío de email o backend real antes de publicar -->
+      <form class="contact-form" action="https://formspree.io/f/TU_ID_DE_FORMSPREE" method="post">
+        <input type="hidden" name="_subject" value="Nuevo mensaje desde codepina.com" />
         <div class="form-row">
           <div class="form-group">
             <label for="nombre">Nombre</label>

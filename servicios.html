@@ -8,12 +8,11 @@
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Codepina" />
 <link rel="icon" type="image/png" href="assets/favicon.png" />
-<!-- REVISAR: sustituir por la URL absoluta de producción en canonical y og:url cuando el sitio esté publicado -->
-<link rel="canonical" href="servicios.html" />
+<link rel="canonical" href="https://www.codepina.com/servicios.html" />
 <meta property="og:title" content="Trabajos en Mármol y Granito en Tomelloso | Codepina" />
 <meta property="og:description" content="Alta decoración, arte funerario y construcción en mármol, granito y piedra natural en Tomelloso." />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="servicios.html" />
+<meta property="og:url" content="https://www.codepina.com/servicios.html" />
 <meta property="og:image" content="https://www.codepina.com/assets/hero-poster.jpg" />
 <meta property="og:locale" content="es_ES" />
 <meta property="og:site_name" content="Codepina" />
@@ -29,8 +28,8 @@
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "index.html"},
-    {"@type": "ListItem", "position": 2, "name": "Productos", "item": "servicios.html"}
+    {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.codepina.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Productos", "item": "https://www.codepina.com/servicios.html"}
   ]
 }
 </script>
@@ -74,7 +73,8 @@ h2{font-size:clamp(1.8rem,3.5vw,2.6rem);margin-bottom:16px;}
 .btn-outline:hover{background:rgba(255,255,255,.08);border-color:#fff;}
 
 /* Header */
-.site-header{position:sticky;top:0;z-index:100;background:rgba(10,10,9,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--color-border);}
+.site-header{position:sticky;top:0;z-index:100;border-bottom:1px solid var(--color-border);}
+.site-header::before{content:'';position:absolute;inset:0;z-index:-1;background:rgba(10,10,9,.85);backdrop-filter:blur(10px);}
 .header-inner{max-width:var(--container);margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:24px;}
 .logo-link{display:flex;align-items:center;gap:12px;}
 .logo-mark{height:58px;width:auto;}

@@ -8,12 +8,11 @@
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Codepina" />
 <link rel="icon" type="image/png" href="assets/favicon.png" />
-<!-- REVISAR: sustituir por la URL absoluta de producción en canonical y og:url cuando el sitio esté publicado -->
-<link rel="canonical" href="aviso-legal.html" />
+<link rel="canonical" href="https://www.codepina.com/aviso-legal.html" />
 <meta property="og:title" content="Aviso Legal | Codepina" />
 <meta property="og:description" content="Aviso legal de Codepina: datos identificativos, condiciones de uso, propiedad intelectual y legislación aplicable al sitio web." />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="aviso-legal.html" />
+<meta property="og:url" content="https://www.codepina.com/aviso-legal.html" />
 <meta property="og:image" content="https://www.codepina.com/assets/hero-poster.jpg" />
 <meta property="og:locale" content="es_ES" />
 <meta property="og:site_name" content="Codepina" />
@@ -29,8 +28,8 @@
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "index.html"},
-    {"@type": "ListItem", "position": 2, "name": "Aviso Legal", "item": "aviso-legal.html"}
+    {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.codepina.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Aviso Legal", "item": "https://www.codepina.com/aviso-legal.html"}
   ]
 }
 </script>
@@ -64,7 +63,8 @@ section{padding:80px 0;}
 .eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.78rem;color:var(--color-primary);font-weight:700;margin-bottom:14px;display:block;}
 
 /* Header */
-.site-header{position:sticky;top:0;z-index:100;background:rgba(10,10,9,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--color-border);}
+.site-header{position:sticky;top:0;z-index:100;border-bottom:1px solid var(--color-border);}
+.site-header::before{content:'';position:absolute;inset:0;z-index:-1;background:rgba(10,10,9,.85);backdrop-filter:blur(10px);}
 .header-inner{max-width:var(--container);margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:24px;}
 .logo-link{display:flex;align-items:center;gap:12px;}
 .logo-mark{height:58px;width:auto;}
@@ -120,7 +120,6 @@ section{padding:80px 0;}
 .legal-content strong{color:var(--color-text);}
 .legal-content a{color:var(--color-text);font-weight:700;}
 .legal-content a:hover{color:var(--color-primary);}
-.revisar-note{background:var(--color-bg-alt);border:1px solid var(--color-border);border-left:3px solid var(--color-primary);border-radius:var(--radius);padding:18px 20px;margin-bottom:40px;font-size:.9rem;}
 
 /* Footer */
 .site-footer{background:var(--color-bg-alt);border-top:1px solid var(--color-border);}
@@ -185,10 +184,6 @@ section{padding:80px 0;}
   <div class="container">
     <div class="legal-content">
       <p class="legal-updated">Última actualización: septiembre de 2026</p>
-
-      <div class="revisar-note">
-        <!-- REVISAR --> Este texto es una plantilla estándar de aviso legal adaptada con los datos reales facilitados de Codepina. Antes de publicar el sitio, un profesional legal debería revisarlo para confirmar la razón social exacta, la forma jurídica, el Registro Mercantil y cualquier otro dato identificativo asociado al CIF B-13245675.
-      </div>
 
       <h2>1. Datos identificativos</h2>
       <p>En cumplimiento del artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE), se informa de los siguientes datos: el titular de este sitio web es <strong>Codepina</strong> (en adelante, "Codepina" o "el prestador"), con CIF <strong>B-13245675</strong> y domicilio en Ctra. Argamasilla, Km. 0,8, 13700 Tomelloso (Ciudad Real), España.</p>
